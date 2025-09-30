@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Wizard's Express</title>
+    <link rel="stylesheet" href="../css/style.css?v=1.2">
+</head>
+<body>
+
+    <header style="user-select: none; cursor: default;">
+        <div id="logo">
+            <img src="../img/mini-logo.webp" alt="Logo WE" >
+        </div>
+
+        <div id="text-header">
+            <p>Wiki | Wizard's Express</p>
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="Nav">
+            <a href="../index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+            <a href="lore.html"><i class="fa-solid fa-book"></i>Lore du Serveur</a>
+            <a href="https://discord.gg/UWPqUsd73v"><i class="fa-brands fa-discord"></i>Rejoindre le Discord</a>        
+            <hr>
+            <a href="jeu-de-role.html"><i class="fa-solid fa-masks-theater"></i>Le Jeu de Role</a>
+            <a href="lexique-rp.html"><i class="fa-solid fa-tag"></i>Lexique RP</a>
+            <hr>
+            <a href="regles-generales.html"><i class="fa-solid fa-pen-nib"></i>Règles Générales</a>
+            <a href="respect-lore.html"><i class="fa-solid fa-shield-halved"></i>Respect du Lore</a>
+            <a href="regles-discord.html"><i class="fa-solid fa-ticket"></i>Régles Discord</a>
+            <hr>
+            <a href="regles-me.html"><i class="fa-solid fa-eye"></i>Règles /me</a>
+            <a href="regles-coma.html"><i class="fa-solid fa-book-skull"></i>Règles Coma</a>
+            <a href="regles-trames.html"><i class="fa-solid fa-address-book"></i>Règles Trames</a>
+            <a href="groupes-interactions.html"><i class="fa-solid fa-people-group"></i>Groupes & Interactions</a>
+            <hr>
+            <a href="regles-poudlard.html"><i class="fa-brands fa-fort-awesome"></i>Règles Poudlard</a>
+            <a href="regles-professeurs.html"><i class="fa-solid fa-hat-wizard"></i>Règles Professeurs</a>
+            <a class="actuel" href="regles-medicomages.html"><i class="fa-solid fa-user-doctor"></i>Règles Médicomages</a>
+            <a href="magies-sorts-dons.html"><i class="fa-solid fa-wand-sparkles"></i>Magies, Sorts & Dons</a>
+            <hr>
+            <a href="twitch.html"><i class="fa-solid fa-video"></i>Règlement Streamers</a>
+        </div>
+
+        <button class="hamburger">
+          <i class="fas fa-bars menuIcon"></i>
+          <i class="fa-solid fa-xmark closeIcon" id="closeIcon"></i>
+        </button>
+
+        <div class="contenu-main">
+            <div class="img-principale">
+                <img src="../img/regles-medicomage.webp" alt="img-principale"/>
+            </div>
+
+            <div class="txt-main">
+
+                <div class="txt-ST"><span>1.</span> Principes généraux</div><ul>
+                    <li>Le médicomage est un rôle de soutien RP.</li>
+                    <li>L’objectif est de favoriser le jeu de rôle et l’immersion, non la performance ou l’efficacité HRP.</li>
+                    <li>Tout soin doit respecter :</li>
+                    <ol><span class="imp">-</span> le lore magique (sorts, potions, techniques reconnues).</ol>
+                    <ol><span class="imp">-</span> les règles du serveur.</ol>
+                    <ol><span class="imp">-</span> et le fair-play RP.</ol>
+                    <li>Un médicomage doit toujours adapter la durée et la gravité du soin : plus la blessure est grave, plus le soin est long et complexe.</li>
+                    <li>Les soins doivent entraîner des conséquences RP (fatigue, douleurs résiduelles, convalescence), pour éviter tout abus.</li>
+                </ul>
+                <div class="txt-ST"><span>2.</span> Sortilèges et outils autorisés</div><ul>
+                    <li>Seuls les sorts validés par le staff sont utilisables :</li>
+                    <ol><span class="imp">-</span> Episkey → petites blessures.</ol>
+                    <ol><span class="imp">-</span> Ferula → bandages/membres immobilisés.</ol>
+                    <ol><span class="imp">-</span> Vulnera Sanentur → blessures graves.</ol>
+                    <ol><span class="imp">-</span> Anapneo → voies respiratoires dégagées.</ol>
+                    <ol><span class="imp">-</span> Rennervate → réveil d’un inconscient.</ol>
+                    <li>Potions validées (régénération, antidotes, calmants) peuvent compléter les soins.</li>
+                    <li>Aucun sort inventé ou détourné.</li>
+                    <li>Les sorts de soin ne doivent jamais être utilisés comme avantage en combat (spam de soins en duel, etc.).</li>
+                </ul>
+                <div class="txt-ST"><span>3.</span> Typologie des soins et durées RP</div><ul>
+                    <li>Petites blessures (soins rapides)</li>
+                    <ol><span class="imp">- Exemples :</span> Coupures légères, bleu, entorse, nez cassé.</ol>
+                    <ol><span class="imp">- Sorts :</span> Episkey, Ferula.</ol>
+                    <ol><span class="imp">- Durée RP :</span> 30 secondes à 2 minutes.</ol>
+                    <ol><span class="imp">- Résultat :</span> Guérison quasi instantanée, le patient est fonctionnel immédiatement.</ol>
+                </ul>
+                <ul>
+                    <li>Blessures modérées</li>
+                    <ol><span class="imp">- Exemples :</span> Fracture, brûlure moyenne, saignement important, choc magique.</ol>
+                    <ol><span class="imp">- Sorts/Potions :</span> Episkey + Ferula, potions de régénération, pansements ensorcelés.</ol>
+                    <ol><span class="imp">- Durée RP :</span> 5–15 minutes.</ol>
+                    <ol><span class="imp">- Résultat :</span> Patient stabilisé mais affaibli → convalescence, douleurs résiduelles.</ol>
+                </ul>
+                <ul>
+                    <li>Blessures graves / maléfices</li>
+                    <ol><span class="imp">- Exemples :</span> Malédictions noires, Sectumsempra, empoisonnement, organes touchés.</ol>
+                    <ol><span class="imp">- Sorts/Potions :</span> Vulnera Sanentur, Anapneo, antidotes complexes.</ol>
+                    <ol><span class="imp">- Durée RP :</span> 20–40 minutes minimum, souvent hospitalisation.</ol>
+                    <ol><span class="imp">- Résultat :</span> Jamais instantané → suivi, faiblesse, séquelles temporaires (fatigue, cicatrices, handicap provisoire).</ol>
+                </ul>
+                <i>Adapter toujours vos soins au niveau du lore et de la gravité de la blessure selon le Lore.</i>
+
+                <div class="txt-ST"><span>4.</span> Limites de la médicomagie</div><ul>
+                    <li>Un médicomage ne peut pas ressusciter un joueur mort HRP (Avada Kedavra = mort définitive).</li>
+                    <li>Les blessures issues de Malédictions Impardonnables (Doloris, Imperium) ne peuvent être annulées par un simple soin.</li>
+                    <li>Toute blessure grave doit laisser des séquelles RP (au moins temporaires).</li>
+                    <li>Interdiction d’incarner un médicomage “super-héros” qui guérit tout, seul et sans effort.</li>
+                </ul>
+                <div class="txt-ST"><span>5.</span> Comportement HRP</div><ul>
+                    <li>Pas de powergaming :</li>
+                    <ol><span class="imp">-</span> Se soigner/se faire soigner instantanément en plein duel sans RP.</ol>
+                    <ol><span class="imp">-</span> Ignorer la gravité d’une blessure pour continuer à combattre.</ol>
+                    <li>Pas de soin abusif :</li>
+                    <ol><span class="imp">-</span> Un médicomage ne peut pas tout résoudre seul → certaines blessures nécessitent potions, repos, ou l’aide d’un maître médicomage.</ol>
+                    <ol><span class="imp">-</span> Pas de metagaming : ne pas lancer de soins en se basant sur les PV/HP ou infos HRP.</ol>
+                    <ol><span class="imp">-</span> Les soins doivent être une scène RP cohérente (gestes médicaux, dialogue, outils utilisés).</ol>
+                </ul>
+                <div class="txt-ST"><span>6.</span> Équilibre et Sanctions</div><ul>
+                    <li>Le staff peut intervenir en cas d’abus :</li>
+                    <ol><span class="imp">-</span> Spam de soins.</ol>
+                    <ol><span class="imp">-</span> Guérison irréaliste (ex : soigner un Doloris en 2 secondes).</ol>
+                    <ol><span class="imp">-</span> Non-respect du lore.</ol>
+                    <li>En cas de récidive → Avertissement puis retrait du rôle médicomage.</li>
+                </ul>
+                <p class="warning">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span class="warning-text">Equilibre RP :
+                        - Pas de résurrection.
+                        - Favoriser le RP et la narration.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wizard's Express. Tout droits réservés. <!--Par Girah.--> </p>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b8451f0e84.js" crossorigin="anonymous"></script>
+</body>
+</html>

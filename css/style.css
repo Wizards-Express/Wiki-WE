@@ -187,7 +187,7 @@ footer {
 /* Quand on survole → scrollbar grise */
 .Nav:hover::-webkit-scrollbar-thumb,
 .contenu-main:hover::-webkit-scrollbar-thumb {
-  background: #bdbdbd; /* gris clair */
+  background: #a26f28; /* gris clair */
 }
 
 .Nav,
@@ -198,7 +198,7 @@ footer {
 .Nav:hover,
 .contenu-main:hover {
   scrollbar-width: thin;               
-  scrollbar-color: #bdbdbd transparent;
+  scrollbar-color: #a26f28 transparent;
 }
 
 /* === CONTENU MAIN === */
@@ -340,10 +340,9 @@ footer {
 
   .Nav {
     left: 0;
-    height: auto;
     transition: none;
-    height: 100%;
     z-index: 900;
+    overflow-y: auto;
   }
 
   .hamburger {
