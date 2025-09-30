@@ -343,6 +343,7 @@ footer {
     transition: none;
     z-index: 900;
     overflow-y: auto;
+    margin-bottom: 40px;
   }
 
   .hamburger {
