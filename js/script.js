@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Charger automatiquement le menu
-    fetch("nav.html")
+    fetch("https://wizards-express.github.io/Wiki-WE/js/nav.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
