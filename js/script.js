@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Détecter si on est dans /pages/ ou non
-    let navPath = "js/nav.html";
+    let navPath = "includes/nav.html";
     if (window.location.pathname.includes("/pages/")) {
-        navPath = "../js/nav.html";
+        navPath = "../includes/nav.html";
     }
 
     fetch(navPath)
