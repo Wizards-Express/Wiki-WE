@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Charger automatiquement le menu
-    fetch("/js/nav.html")
+    fetch("nav.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
