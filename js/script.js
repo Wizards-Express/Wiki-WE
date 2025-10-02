@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Charger automatiquement le menu
-    fetch("https://wizards-express.github.io/Wiki-WE/js/nav.html")
+    // Détecter si on est dans /pages/ ou non
+    let navPath = "js/nav.html";
+    if (window.location.pathname.includes("/pages/")) {
+        navPath = "../js/nav.html";
+    }
+
+    fetch(navPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
